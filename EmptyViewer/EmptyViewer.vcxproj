@@ -83,6 +83,9 @@
     <ClInclude Include="frame.h" />
     <ClInclude Include="mesh_loader.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bunny.modelobj" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

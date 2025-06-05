@@ -156,7 +156,7 @@ int main(int argc, char** argv)
     glEnable(GL_DEPTH_TEST);
     glDisable(GL_CULL_FACE);
 
-    load_mesh("bunny.obj");       // bunny.obj 로드
+    load_mesh("bunny.modelobj");       // bunny.obj 로드
     init_VAO_VBO();
     glutDisplayFunc(display);     // 디스플레이 콜백 설정
     glutMainLoop();               // 렌더링 루프 시작
