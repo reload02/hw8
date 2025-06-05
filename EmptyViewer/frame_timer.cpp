@@ -60,28 +60,7 @@ float stop_timing()
 	return timeElapsed;
 }
 
-/*
-	Your display function should look roughly like the following.
-*/
-//void display()
-//{
-//	// TODO: Clear the screen and depth buffer.
-//
-// 	start_timing();
-//
-// 	// TODO: Draw the bunny.
-//  	
-//	float timeElapsed = stop_timing();
-//  	gTotalFrames++;
-//  	gTotalTimeElapsed += timeElapsed;
-//  	float fps = gTotalFrames / gTotalTimeElapsed;
-//  	char string[1024] = {0};
-//  	sprintf(string, "OpenGL Bunny: %0.2f FPS", fps);
-//  	glutSetWindowTitle(string);
-//
-//	glutPostRedisplay();
-//  	glutSwapBuffers();
-//}
+
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -153,12 +132,12 @@ void display()
     glEnd();
 
     float timeElapsed = stop_timing();
-      	gTotalFrames++;
-      	gTotalTimeElapsed += timeElapsed;
-      	float fps = gTotalFrames / gTotalTimeElapsed;
-      	char string[1024] = {0};
-      	sprintf(string, "OpenGL Bunny: %0.2f FPS", fps);
-      	glutSetWindowTitle(string);
+    gTotalFrames++;
+    gTotalTimeElapsed += timeElapsed;
+    float fps = gTotalFrames / gTotalTimeElapsed;
+    char string[1024] = { 0 };
+    sprintf(string, "OpenGL Bunny(Immediate) : %0.2f FPS", fps);
+    glutSetWindowTitle(string);
 
     glutSwapBuffers();
     glutPostRedisplay(); // 다음 프레임 요청

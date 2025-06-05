@@ -13,10 +13,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{92fbd4b6-b371-475d-952f-42743525e670}</ProjectGuid>
+    <ProjectGuid>{332942A3-8562-4016-B642-772E4C68C05E}</ProjectGuid>
     <RootNamespace>EmptyViewer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Q1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -77,7 +76,7 @@
   <ItemGroup>
     <ClCompile Include="frame_timer.cpp" />
     <ClCompile Include="load_mesh.cpp" />
-    <ClCompile Include="Main_EmptyViewer.cpp" />
+    <ClCompile Include="Q2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frame.h" />
