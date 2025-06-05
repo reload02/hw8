@@ -1,5 +1,5 @@
 #pragma once
-
+void display();
 void init_timer();
 void start_timing();
 float stop_timing();
